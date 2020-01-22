@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
+/* ------ Components ------ */
+import Landing from './components/Landing.jsx';
+import Articles from './components/Articles.jsx';
+
 const AppContainer = styled.div`
-  div {
-    color: blue;
-  }
+  /* */
 `;
 
 class App extends React.Component {
@@ -23,7 +25,8 @@ class App extends React.Component {
   render() {
     return (
       <AppContainer>
-        <div>Hei</div>
+        <Landing />
+        <Articles />
       </AppContainer>
     );
   }
