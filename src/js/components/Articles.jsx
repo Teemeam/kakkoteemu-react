@@ -5,10 +5,14 @@ import styled from '@emotion/styled';
 import { articles } from './articles.js';
 
 const StyledArticles = styled.div`
-  max-width: 600px;
-  margin: 0 auto;
+  width: 100%;
   padding: 20px 0;
-  .card {
+  background-color: #eee;
+  div {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  div > .card {
     display: flex;
     flex-direction: row;
     padding: 10px 0;
@@ -24,15 +28,24 @@ const StyledArticles = styled.div`
   .card__text {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
   }
   .card__text > a {
     text-decoration: none;
-    color: black;
+    color: #3ee6bf;
   }
-  .card__text > a > p {
-    margin: 0;
+  .button-wrapper {
+    text-align: center;
+    padding: 20px 0;
+  }
+  button {
+    border: none;
+    background-color: #fb544d;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
   }
 `;
 
@@ -64,9 +77,11 @@ const Articles = (props) => {
   return (
     <StyledArticles>
       <div>{ data }</div>
-      { numberOfCards < 4 ?
-      <button onClick={ () => setShowMore(true) }>Näytä lisää</button> :
-      <button onClick={ () => setShowMore(false) }>Näytä vähemmän</button> }
+      <div class='button-wrapper'>
+        { numberOfCards < 4 ?
+        <button onClick={ () => setShowMore(true) }>Näytä lisää</button> :
+        <button onClick={ () => setShowMore(false) }>Näytä vähemmän</button> }
+      </div>
     </StyledArticles>);
 };
 
