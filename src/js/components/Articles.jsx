@@ -77,7 +77,7 @@ const Articles = (props) => {
   return (
     <StyledArticles>
       <div>{ data }</div>
-      <div class='button-wrapper'>
+      <div className='button-wrapper'>
         { numberOfCards < 4 ?
         <button onClick={ () => setShowMore(true) }>Näytä lisää</button> :
         <button onClick={ () => setShowMore(false) }>Näytä vähemmän</button> }

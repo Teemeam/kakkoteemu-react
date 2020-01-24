@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
 
 const StyledLanding = styled.div`
@@ -15,42 +15,105 @@ const StyledLanding = styled.div`
     padding: 0 0 0 50px;
   }
   .landing-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     color: #fb544d;
     font-weight: 900;
     margin: 0;
     padding: 0;
-    font-size: 160px;
+    font-size: 140px;
     line-height: 1.1;
+    mix-blend-mode: screen;
+    white-space: nowrap;
+  }
+  .landing-description {
+    font-family: 'Montserrat', sans-serif;
+    color: #fb544d;
+    font-weight: 300;
+    margin: 0;
+    padding: 30px 0 0 0;
+    font-size: 30px;
+    line-height: 1.1;
+    mix-blend-mode: screen;
   }
 `;
 
 const Landing = (props) => {
+
+  // Save color values to arrays
+  /* const from = [28, 32, 43]; */
+  const from = [0, 30, 30]; // Green
+  const to = [63, 30, 30]; // Red
+
   // Create hook for mouse position
-  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [position, setPosition] = useState(0);
 
-  // Init ref hook for landing wrapper
-  const landing = useRef();
+  // Create hook for window width
+  const [width, setWidth] = useState(window.innerWidth);
 
-  // On mouse move, refresh mouse position
+  // Divide mouse position with window width to get a percentage
+  const division = position / width;
+
+  // Declare variables for rgb values
+  let r;
+  let g;
+  let b;
+
+  // Count r value
+  if (from[0] < to[0]) {
+    r = from[0] + ((to[0] - from[0]) * division);
+  } else if (from[0] > to[0]) {
+    r = from[0] - ((from[0] - to[0]) * division);
+  } else {
+    r = from[0];
+  }
+
+  // Count g
+  if (from[1] < to[1]) {
+    g = from[1] + ((to[1] - from[1]) * division);
+  } else if (from[1] > to[1]) {
+    g = from[1] - ((from[1] - to[1]) * division);
+  } else {
+    g = from[1];
+  }
+
+  // Count b
+  if (from[2] < to[2]) {
+    b = from[2] + ((to[2] - from[2]) * division);
+  } else if (from[2] > to[2]) {
+    b = from[2] - ((from[2] - to[2]) * division);
+  } else {
+    b = from[2];
+  }
+
+  // Put it together
+  let bgColor = 'rgb(' + r + ',' + g + ',' + b + ')';
+
+  // Update mouse position
+  const updateMousePosition = e => setPosition(e.pageX);
+
+  // Update window width
+  const updateWindowWidth = () => setWidth(window.innerWidth);
+
   useEffect(() => {
-    const setFromEvent = e => setPosition({ x: e.clientX, y: e.clientY });
-    landing.current.addEventListener('mousemove', setFromEvent);
+    // Add event listeners for mouse move and resize
+    window.addEventListener('mousemove', updateMousePosition);
+    window.addEventListener('resize', updateWindowWidth);
 
     return () => {
-      landing.current.removeEventListener('mousemove', setFromEvent);
+      // Remove event listeners
+      window.removeEventListener('mousemove', updateMousePosition);
+      window.removeEventListener('resize', updateWindowWidth);
     };
   }, []);
 
-  console.log(window.innerWidth);
-
   return (
     <StyledLanding>
-      <div ref={ landing } style={{ backgroundColor: "rgb(" + (position.x / 20) + ",30,30)" }} className='outer-landing-wrapper'>
-          <div className='inner-landing-wrapper'>
-              <h1 className='landing-title'>Hey,</h1>
-              <h1 className='landing-title'>I'm Teemu</h1>
-          </div>
+      <div style={{ backgroundColor: bgColor }} className='outer-landing-wrapper'>
+        <div className='inner-landing-wrapper'>
+          <h1 className='landing-title'>Hey,</h1>
+          <h1 className='landing-title'>I'm Teemu</h1>
+          <h2 className='landing-description'>a Finnish programmer journalist</h2>
+        </div>
       </div>
     </StyledLanding>);
 };
