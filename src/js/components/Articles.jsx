@@ -12,9 +12,18 @@ const StyledArticles = styled.div`
     max-width: 600px;
     margin: 0 auto;
   }
+  .title-wrapper {
+    text-align: center;
+  }
+  .title-wrapper > h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: rgb(0, 30, 30);
+    margin: 0;
+  }
   .button-wrapper {
     text-align: center;
-    padding: 20px 0 0 0;
+    padding: 30px 0 0 0;
   }
   .button-wrapper > button {
     border: none;
@@ -165,6 +174,9 @@ const Articles = (props) => {
 
   return (
     <StyledArticles>
+      <div className='title-wrapper'>
+        <h2>Newest stories</h2>
+      </div>
       <div className='button-wrapper'>
         <button style={{ color: buttonValue === '' ? '#fc6862' : 'black' }} onClick={ e => setButtonValue('') }>All</button>
         <button style={{ color: buttonValue === 'code' ? '#fc6862' : 'black' }} onClick={ e => setButtonValue('code') }>Code</button>
@@ -182,9 +194,9 @@ const Articles = (props) => {
 
       <div className='more-wrapper'>
         { filtered_articles.length > 3 && numberOfCards < filtered_articles.length ?
-        <button onClick={ () => setNumberOfCards(numberOfCards + 2) }>Näytä lisää</button> : null }
+        <button onClick={ () => setNumberOfCards(numberOfCards + 2) }>Show more</button> : null }
         { filtered_articles.length > 3 && numberOfCards >= filtered_articles.length ?
-        <button onClick={ () => setNumberOfCards(3) }>Näytä vähemmän</button> : null }
+        <button onClick={ () => setNumberOfCards(3) }>Show less</button> : null }
       </div>
     </StyledArticles>);
 };
