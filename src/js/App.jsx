@@ -5,6 +5,7 @@ import styled from '@emotion/styled';
 import Landing from './components/Landing.jsx';
 import About from './components/About.jsx';
 import Articles from './components/Articles.jsx';
+import Feedback from './components/Feedback.jsx';
 import Footer from './components/Footer.jsx';
 
 const AppContainer = styled.div`
@@ -91,8 +92,9 @@ class App extends React.Component {
     return (
       <AppContainer>
         <Landing bgColor={ bgColor }/>
-        <About />
+        <About bgColor={ bgColor }/>
         <Articles />
+        <Feedback bgColor={ bgColor }/>
         <Footer bgColor={ bgColor }/>
       </AppContainer>
     );

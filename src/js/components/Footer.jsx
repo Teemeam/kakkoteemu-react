@@ -45,9 +45,10 @@ const StyledFooter = styled.div`
         margin: 0;
         font-family: 'Montserrat', sans-serif;
         font-weight: 300;
-        font-size: 14px;
-        padding: 30px 0;
-        color: white;
+        font-size: 12px;
+        padding: 40px 0 20px 0;
+        color: #fb544d;
+        mix-blend-mode: screen;
         opacity: 0.1;
     }
 `;

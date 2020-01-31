@@ -6,7 +6,7 @@ import { articles } from './articles.js';
 
 const StyledArticles = styled.div`
   width: 100%;
-  padding: 20px 0;
+  padding: 40px 0;
   background-color: #eee;
   div {
     max-width: 600px;
@@ -18,23 +18,35 @@ const StyledArticles = styled.div`
   .title-wrapper > h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    color: rgb(0, 30, 30);
+    font-size: 30px;
     margin: 0;
+  }
+  .title-wrapper > h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0;
+    padding: 20px 0 0 0;
   }
   .button-wrapper {
     text-align: center;
-    padding: 30px 0 0 0;
+    padding: 20px 0 0 0;
   }
   .button-wrapper > button {
     border: none;
+    border-radius: 30px;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    color: #fc6862;
-    border-bottom: 2px solid #fc6862;
-    margin: 0 5px;
-    font-size: 16px;
+    font-weight: 300;
+    background-color: #ddd;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
     outline: none;
+    transition: transform 0.1s ease-in-out 0s;
+    :hover {
+      transform: scale(1.05);
+    }
   }
   button::-moz-focus-inner {
     border: 0;
@@ -44,12 +56,15 @@ const StyledArticles = styled.div`
   }
   .input-wrapper > input {
     border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    margin: 20px 0;
-    width: 200px;
+    border-bottom: 1px solid black;
+    margin: 20px 0 40px 0;
+    padding: 0 0 3px 0;
+    width: 280px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+    background-color: transparent;
   }
   div > .card {
     display: flex;
@@ -74,27 +89,43 @@ const StyledArticles = styled.div`
   .card__text > p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    font-size: 14px;
     margin: 0;
     padding: 0 0 10px 0;
-    color: #fb544d;
   }
   .card__text > a {
     text-decoration: none;
-    color: rgb(0, 30, 30);
+    color: black;
   }
   .card__text > a > p {
     margin: 0;
   }
   .more-wrapper {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px 0 10px 0;
   }
   .more-wrapper > button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
     border: none;
     background-color: #fc6862;
     padding: 10px 20px;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
+    outline: none;
+    transition: transform 0.1s ease-in-out 0s;
+    :hover {
+      transform: scale(1.05);
+    }
+  }
+  .nothing-to-show {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    width: 94%;
+    margin: 0 3%;
+    padding: 10px 0 0 0;
   }
 `;
 
@@ -175,22 +206,28 @@ const Articles = (props) => {
   return (
     <StyledArticles>
       <div className='title-wrapper'>
-        <h2>Newest stories</h2>
+        <h2>Recent stories</h2>
+        <h3>Search by category</h3>
       </div>
       <div className='button-wrapper'>
-        <button style={{ color: buttonValue === '' ? '#fc6862' : 'black' }} onClick={ e => setButtonValue('') }>All</button>
-        <button style={{ color: buttonValue === 'code' ? '#fc6862' : 'black' }} onClick={ e => setButtonValue('code') }>Code</button>
-        <button style={{ color: buttonValue === 'writing' ? '#fc6862' : 'black' }} onClick={ e => setButtonValue('writing') }>Writing</button>
+        <button style={{ backgroundColor: buttonValue === '' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('') }>All</button>
+        <button style={{ backgroundColor: buttonValue === 'code' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('code') }>Code</button>
+        <button style={{ backgroundColor: buttonValue === 'writing' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('writing') }>Writing</button>
+        <button style={{ backgroundColor: buttonValue === 'tv' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('tv') }>TV</button>
+        <button style={{ backgroundColor: buttonValue === 'radio' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('radio') }>Radio</button>
+      </div>
+      <div className='title-wrapper'>
+        <h3>or start typing</h3>
       </div>
 
       <div className='input-wrapper'>
-        <input value={ inputValue } onChange={ e => setInputValue(e.target.value) } placeholder='Search for a story'></input>
+        <input autoFocus value={ inputValue } onChange={ e => setInputValue(e.target.value) }></input>
       </div>
 
       {/* Articles render here */}
       { filtered_articles.length > 0 ?
         <div>{ data }</div> : 
-        <p>Ei näytettävää</p> }
+        <p className='nothing-to-show'>Your search did not match any stories</p> }
 
       <div className='more-wrapper'>
         { filtered_articles.length > 3 && numberOfCards < filtered_articles.length ?
