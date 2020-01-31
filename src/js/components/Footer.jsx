@@ -4,18 +4,39 @@ import styled from '@emotion/styled';
 const StyledFooter = styled.div`
     width: 100%;
     padding: 30px 0 0 0;
+    @media (max-width: 700px) {
+        padding: 20px 0 0 0;
+    }
     div {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        @media (max-width: 700px) {
+            flex-direction: column;
+        }
     }
     div > div {
-        max-width: 50%;
+        display: block;
         margin: 0 auto;
+        flex: 1 1 0px;
     }
     div > div > h3 {
         font-family: 'Montserrat', sans-serif;
         font-weight: 900;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+        color: #fb544d;
+        mix-blend-mode: screen;
+        @media (max-width: 700px) {
+            padding: 20px 0 10px 0;
+        }
+    }
+    div > div > p, a {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        text-align: center;
+        margin: 0;
         color: #fb544d;
         mix-blend-mode: screen;
     }
@@ -38,9 +59,15 @@ const Footer = (props) => {
         <div>
             <div>
                 <h3>Location</h3>
+                <p>Tampere, Finland</p>
             </div>
             <div>
                 <h3>Contact</h3>
+                <p>kakkoteemu(at)outlook.com</p>
+            </div>
+            <div>
+                <h3>Social media</h3>
+                <p><a href='https://twitter.com/kakkoteemu' target='blank'>Twitter</a>, <a href='https://fi.linkedin.com/in/kakkoteemu' target='blank'>LinkedIn</a>, <a href='https://github.com/teemeam' target='blank'>GitHub</a></p>
             </div>
         </div>
         <p className='copyright'>&copy; 2015–2020</p>

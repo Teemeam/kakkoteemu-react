@@ -6,7 +6,7 @@ const StyledAbout = styled.div`
     background-color: #eee;
     padding: 30px 0;
     div {
-        max-width: 600px;
+        max-width: 500px;
         margin: 0 auto;
         background-color: #ddd;
         padding: 20px 0;
@@ -18,8 +18,8 @@ const StyledAbout = styled.div`
         text-align: center;
         max-width: 94%;
         margin: 0 3%;
-        font-size: 26px;
-        line-height: 1.1;
+        font-size: 22px;
+        line-height: 1.3;
     }
     div > p > span {
         font-weight: 900;
@@ -32,7 +32,7 @@ const About = (props) => {
   return (
     <StyledAbout>
         <div>
-            <p>I've been working as a journalist for <span>Yle</span>, the Finnish public service broadcasting company, tabloid newspaper <span>Iltalehti</span>, local newspaper <span>Salon Seudun Sanomat</span> and <span>Ruotuväki</span>, the newspaper of the Finnish Defence Forces.</p>
+            <p>I've been working as a journalist for the Finnish broadcasting company <span>Yle</span>, tabloid newspaper <span>Iltalehti</span>, local newspaper <span>Salon Seudun Sanomat</span> and <span>Ruotuväki</span>, the newspaper of the Finnish Defence Forces.</p>
         </div>
     </StyledAbout>);
 };

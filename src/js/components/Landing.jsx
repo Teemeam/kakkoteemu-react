@@ -7,12 +7,14 @@ const StyledLanding = styled.div`
     height: 100vh;
     background-color: #1c202b;
     display: table;
-
   }
   .inner-landing-wrapper {
     display: table-cell;
     vertical-align: middle;
     padding: 0 0 0 50px;
+    @media (max-width: 900px) {
+      padding: 0 0 0 3%;
+    }
   }
   .landing-title {
     font-family: 'Montserrat', sans-serif;
@@ -24,16 +26,22 @@ const StyledLanding = styled.div`
     line-height: 1.1;
     mix-blend-mode: screen;
     white-space: nowrap;
+    @media (max-width: 900px) {
+      font-size: 16.5vw;
+    }
   }
   .landing-description {
     font-family: 'Montserrat', sans-serif;
     color: #fb544d;
     font-weight: 300;
-    margin: 0;
+    margin: 0 3% 0 0;
     padding: 30px 0 0 0;
     font-size: 30px;
     line-height: 1.1;
     mix-blend-mode: screen;
+    @media (max-width: 900px) {
+      padding: 20px 0 0 0;
+    }
   }
 `;
 
