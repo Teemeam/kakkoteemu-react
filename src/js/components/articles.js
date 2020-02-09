@@ -4,6 +4,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-11016106",
         image_id: "39-5893575d762b795ff2f",
         published: "14.10.2019",
+        publisher: "Yle",
         role: "code",
     },
     {
@@ -11,6 +12,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-10734160",
         image_id: "13-3-10731896",
         published: "24.4.2019",
+        publisher: "Yle",
         role: "code",
     },
     {
@@ -18,6 +20,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-11068956",
         image_id: "39-6237985df8ea2ff41a3",
         published: "21.12.2019",
+        publisher: "Yle",
         role: "code",
     },
     {
@@ -25,6 +28,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-11089578",
         image_id: "13-3-11103569",
         published: "8.12.2019",
+        publisher: "Yle",
         role: "code",
     },
     {
@@ -32,6 +36,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-11088126",
         image_id: "39-6160635ddd28eb92bf2",
         published: "28.11.2019",
+        publisher: "Yle",
         role: "code",
     },
     {
@@ -39,6 +44,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-10946241",
         image_id: "13-3-10947472",
         published: "4.9.2019",
+        publisher: "Yle",
         role: "code, writing",
     },
     {
@@ -46,6 +52,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-10881289",
         image_id: "13-3-10883209",
         published: "19.7.2019",
+        publisher: "Yle",
         role: "code",
     },
     {
@@ -53,6 +60,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-10346334",
         image_id: "13-3-10374675",
         published: "1.9.2018",
+        publisher: "Yle",
         role: "writing",
     },
     {
@@ -60,6 +68,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-10277828",
         image_id: "13-3-10287820",
         published: "9.7.2018",
+        publisher: "Yle",
         role: "writing",
     },
     {
@@ -67,6 +76,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-10289879",
         image_id: "13-3-10302881",
         published: "15.7.2018",
+        publisher: "Yle",
         role: "writing",
     },
     {
@@ -74,6 +84,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-10805175",
         image_id: "13-3-10805719",
         published: "2.6.2019",
+        publisher: "Yle",
         role: "code",
     },
     {
@@ -81,6 +92,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-11116844",
         image_id: "39-6297195e1845bd6f04b",
         published: "11.1.2020",
+        publisher: "Yle",
         role: "code",
     },
     {
@@ -88,6 +100,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-10249603",
         image_id: "13-3-10249645",
         published: "12.6.2018",
+        publisher: "Yle",
         role: "writing",
     },
     {
@@ -95,6 +108,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-8212940",
         image_id: "13-3-8213008",
         published: "9.8.2015",
+        publisher: "Yle",
         role: "writing",
     },
     {
@@ -102,6 +116,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-10310825",
         image_id: "13-3-10311352",
         published: "18.7.2018",
+        publisher: "Yle",
         role: "writing",
     },
     {
@@ -109,6 +124,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-10266522",
         image_id: "13-3-10266670",
         published: "20.6.2018",
+        publisher: "Yle",
         role: "writing",
     },
     {
@@ -116,6 +132,7 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-8106280",
         image_id: "13-3-6794021",
         published: "26.6.2015",
+        publisher: "Yle",
         role: "writing",
     },
     {
@@ -123,6 +140,15 @@ export const articles = [
         url: "https://yle.fi/uutiset/3-8213407",
         image_id: "13-3-8213448",
         published: "9.8.2015",
+        publisher: "Yle",
         role: "writing",
+    },
+    {
+        title: "Tämä on kertomus saamenpuvuista – aviomies halusi säpikkäisiinsä vihreää, sillä vaimo on kotoisin Lemmenjoen mäntymetsästä – Gákti čatná olbmuid oktii: vihtta gáktemuitalusa",
+        url: "https://yle.fi/uutiset/3-11191637",
+        image_id: "39-6391335e3abe44dee40",
+        published: "5.2.2020",
+        publisher: "Yle",
+        role: "code",
     },
 ]

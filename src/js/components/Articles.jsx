@@ -8,9 +8,17 @@ const StyledArticles = styled.div`
   width: 100%;
   padding: 40px 0;
   background-color: #eee;
-  div {
+  .data-wrapper {
     max-width: 600px;
     margin: 0 auto;
+    @media (max-width: 620px) {
+      max-width: 400px;
+    }
+    @media (max-width: 430px) {
+      max-width: none;
+      width: 94%;
+      margin: 0 3%;
+    }
   }
   .title-wrapper {
     text-align: center;
@@ -70,6 +78,10 @@ const StyledArticles = styled.div`
     display: flex;
     flex-direction: row;
     padding: 10px 0;
+    @media (max-width: 620px) {
+      flex-direction: column;
+      padding: 0 0 30px 0;
+    }
   }
   .card__image {
     background-size: cover;
@@ -78,6 +90,12 @@ const StyledArticles = styled.div`
     width: 450px;
     height: 150px;
     margin: 0 15px 0 0;
+    @media (max-width: 620px) {
+      width: 100%;
+      height: 0;
+      margin: 0;
+      padding: 0 0 66% 0;
+    }
   }
   .card__text {
     width: 100%;
@@ -91,7 +109,11 @@ const StyledArticles = styled.div`
     font-weight: 300;
     font-size: 14px;
     margin: 0;
-    padding: 0 0 10px 0;
+    padding: 5px 0 0 0;
+    color: #fc6862;
+    @media (max-width: 620px) {
+      margin: 0 3px;
+    }
   }
   .card__text > a {
     text-decoration: none;
@@ -99,6 +121,9 @@ const StyledArticles = styled.div`
   }
   .card__text > a > p {
     margin: 0;
+    @media (max-width: 620px) {
+      padding: 10px 3px;
+    }
   }
   .more-wrapper {
     text-align: center;
@@ -138,12 +163,6 @@ const Articles = (props) => {
 
   // If false, only 3 articles visible
   const [numberOfCards, setNumberOfCards] = useState(3);
-
-  /* If false, only 3 articles visible
-  const [showMore, setShowMore] = useState(false);
- 
-  // Set number of cards 3 or all
-  const numberOfCards = showMore ? articles.length : 3; */
 
   // Url before image ids
   const yle_url = 'https://images.cdn.yle.fi/image/upload/f_auto,fl_lossy,q_auto%3Aeco,w_386,h_258,c_fill,g_faces,dpr_1.0/';
@@ -195,10 +214,10 @@ const Articles = (props) => {
       <div className='card' key={ 'container_' + item.title }>
         <div className='card__image' key={ 'img_' + item.title } href={ item.url } style={{ backgroundImage: 'url(' + yle_url + item.image_id + '.jpg)' }}></div>
         <div className='card__text' key={ 'title_' + item.title }>
-          <p>{ item.published }</p>
           <a href={ item.url } target='_blank'>
             <p>{ item.title }</p>
           </a>
+          <p>{ item.published }, { item.publisher }</p>
         </div>
       </div>
   );
@@ -226,7 +245,7 @@ const Articles = (props) => {
 
       {/* Articles render here */}
       { filtered_articles.length > 0 ?
-        <div>{ data }</div> : 
+        <div className='data-wrapper'>{ data }</div> : 
         <p className='nothing-to-show'>Your search did not match any stories</p> }
 
       <div className='more-wrapper'>
