@@ -99,6 +99,7 @@ const StyledArticles = styled.div`
   }
   .card__text {
     width: 100%;
+    margin: auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     font-size: 16px;
@@ -109,7 +110,7 @@ const StyledArticles = styled.div`
     font-weight: 300;
     font-size: 14px;
     margin: 0;
-    padding: 5px 0 0 0;
+    padding: 6px 0 0 0;
     color: #fc6862;
     @media (max-width: 620px) {
       margin: 0 3px;
@@ -240,7 +241,7 @@ const Articles = (props) => {
       </div>
 
       <div className='input-wrapper'>
-        <input autoFocus value={ inputValue } onChange={ e => setInputValue(e.target.value) }></input>
+        <input value={ inputValue } onChange={ e => setInputValue(e.target.value) } placeholder='|'></input>
       </div>
 
       {/* Articles render here */}

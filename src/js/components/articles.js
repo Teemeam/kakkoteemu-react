@@ -151,4 +151,12 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        title: "Avantouinti on nyt niin suosittua, että jäihin pitää jonottaa – katso, miten liha kangistuu ja nahka höyryää Suomen vilkkaimmalla avannolla",
+        url: "https://yle.fi/uutiset/3-11192805",
+        image_id: "39-6381075e38278eba158",
+        published: "8.2.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
