@@ -18,18 +18,6 @@ module.exports = {
         use: "babel-loader"
       },
       {
-        test: /\.(png|jpg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'img',
-              name: '[name].[ext]'
-            },
-          },
-        ],
-      },
-      {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
       }
@@ -44,7 +32,13 @@ module.exports = {
     }),
     new MiniCssExtractPlugin({
       filename: "bundle.css"
-    })
+    }),
+    new CopyWebpackPlugin([
+      {
+        from: 'src/img/',
+        to: 'img',
+      },
+    ])
   ]
 }
 
