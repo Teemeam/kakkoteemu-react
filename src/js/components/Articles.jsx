@@ -59,6 +59,24 @@ const StyledArticles = styled.div`
   button::-moz-focus-inner {
     border: 0;
   }
+  .button-wrapper > a {
+    display: inline-block;
+    border-radius: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(0, 30, 30);
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    transition: transform 0.1s ease-in-out 0s;
+    text-decoration: none;
+    outline: none;
+    :hover {
+      transform: scale(1.05);
+    }
+  }
   .input-wrapper {
     text-align: center;
   }
@@ -73,6 +91,11 @@ const StyledArticles = styled.div`
     font-size: 20px;
     text-align: center;
     background-color: transparent;
+    cursor: text;
+    @media(max-width: 300px) {
+      width: 94%;
+      margin: 20px 3% 40px 3%;
+    }
   }
   div > .card {
     display: flex;
@@ -129,6 +152,9 @@ const StyledArticles = styled.div`
   .more-wrapper {
     text-align: center;
     padding: 20px 0 10px 0;
+    @media(max-width: 620px) {
+      padding: 0 0 10px 0;
+    }
   }
   .more-wrapper > button {
     font-family: 'Montserrat', sans-serif;
@@ -233,15 +259,15 @@ const Articles = (props) => {
         <button style={{ backgroundColor: buttonValue === '' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('') }>All</button>
         <button style={{ backgroundColor: buttonValue === 'code' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('code') }>Code</button>
         <button style={{ backgroundColor: buttonValue === 'writing' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('writing') }>Writing</button>
-        <button style={{ backgroundColor: buttonValue === 'tv' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('tv') }>TV</button>
-        <button style={{ backgroundColor: buttonValue === 'radio' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('radio') }>Radio</button>
+        <a href='https://drive.google.com/open?id=0B_O6i0BSTEvJZkNsQXN0X0hCX2c' target='_blank'>TV</a>
+        <a href='https://drive.google.com/open?id=0B_O6i0BSTEvJem9rREJndkdwXzg' target='_blank'>Radio</a>
       </div>
       <div className='title-wrapper'>
         <h3>or start typing</h3>
       </div>
 
       <div className='input-wrapper'>
-        <input value={ inputValue } onChange={ e => setInputValue(e.target.value) } placeholder='|'></input>
+        <input value={ inputValue } onChange={ e => setInputValue(e.target.value) } placeholder=''></input>
       </div>
 
       {/* Articles render here */}
