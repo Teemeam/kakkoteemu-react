@@ -4,35 +4,47 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-    entry: "./src/index.js",
-    mode: "development",
-    devtool: 'inline-source-map',
-    output: {
-        path: path.resolve(__dirname, "dist"),
-        filename: "bundle.js"
-    },
-    module: {
-        rules: [
-            {
-                test: /\.(js|jsx)$/, 
-                use: "babel-loader"
+  entry: "./src/index.js",
+  mode: "development",
+  devtool: 'inline-source-map',
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js"
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(js|jsx)$/, 
+        use: "babel-loader"
+      },
+      {
+        test: /\.(png|jpg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'img',
+              name: '[name].[ext]'
             },
-            {
-                test: /\.scss$/,
-                use: ['style-loader', 'css-loader', 'sass-loader']
-            }
-        ]
-    },
-    devServer: {
-        contentBase: path.join(__dirname, 'public')
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-          template: "./src/index.html"
-        }),
-        new MiniCssExtractPlugin({
-            filename: "bundle.css"
-        })
+          },
+        ],
+      },
+      {
+        test: /\.scss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
+      }
     ]
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'public')
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html"
+    }),
+    new MiniCssExtractPlugin({
+      filename: "bundle.css"
+    })
+  ]
 }
 
