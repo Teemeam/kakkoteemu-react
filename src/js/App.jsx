@@ -104,5 +104,5 @@ class App extends React.Component {
 export default App;
 
 App.defaultProps = {
-  path: "",
+  path: '',
 };
