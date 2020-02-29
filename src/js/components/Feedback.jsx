@@ -6,6 +6,9 @@ const StyledFeedback = styled.div`
   height: 50vh;
   background-color: rgb(0, 30, 30); /* Fallback */
   position: relative;
+  @media (max-width: 600px) {
+    height: 30vh;
+  }
   form {
     width: 300px;
     position: absolute;

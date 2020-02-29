@@ -16,8 +16,8 @@ const StyledArticles = styled.div`
     }
     @media (max-width: 430px) {
       max-width: none;
-      width: 94%;
-      margin: 0 3%;
+      width: 92%;
+      margin: 0 4%;
     }
   }
   .title-wrapper {
@@ -37,7 +37,9 @@ const StyledArticles = styled.div`
     padding: 20px 0 0 0;
   }
   .button-wrapper {
+    width: 92%;
     text-align: center;
+    margin: 0 4%;
     padding: 20px 0 0 0;
   }
   .button-wrapper > button {
@@ -93,8 +95,8 @@ const StyledArticles = styled.div`
     background-color: transparent;
     cursor: text;
     @media(max-width: 300px) {
-      width: 94%;
-      margin: 20px 3% 40px 3%;
+      width: 92%;
+      margin: 20px 4% 40px 4%;
     }
   }
   div > .card {
@@ -127,6 +129,10 @@ const StyledArticles = styled.div`
     font-weight: 900;
     font-size: 16px;
     line-height: 1.3;
+    @media (max-width: 620px) {
+      font-size: 18px;
+      line-height: 1.4;
+    }
   }
   .card__text > p {
     font-family: 'Montserrat', sans-serif;
@@ -136,7 +142,8 @@ const StyledArticles = styled.div`
     padding: 6px 0 0 0;
     color: #fc6862;
     @media (max-width: 620px) {
-      margin: 0 3px;
+      margin: 0 12px;
+      padding: 0;
     }
   }
   .card__text > a {
@@ -146,7 +153,7 @@ const StyledArticles = styled.div`
   .card__text > a > p {
     margin: 0;
     @media (max-width: 620px) {
-      padding: 10px 3px;
+      padding: 10px 12px;
     }
   }
   .more-wrapper {

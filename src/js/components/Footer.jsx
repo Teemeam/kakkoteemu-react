@@ -4,14 +4,14 @@ import styled from '@emotion/styled';
 const StyledFooter = styled.div`
     width: 100%;
     padding: 30px 0 0 0;
-    @media (max-width: 700px) {
+    @media (max-width: 750px) {
         padding: 20px 0 0 0;
     }
     div {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        @media (max-width: 700px) {
+        @media (max-width: 750px) {
             flex-direction: column;
         }
     }
@@ -22,18 +22,20 @@ const StyledFooter = styled.div`
     }
     div > div > h3 {
         font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
         font-weight: 900;
         text-align: center;
         margin: 0;
         padding: 10px 0;
         color: #fb544d;
         mix-blend-mode: screen;
-        @media (max-width: 700px) {
+        @media (max-width: 750px) {
             padding: 20px 0 10px 0;
         }
     }
     div > div > p, a {
         font-family: 'Montserrat', sans-serif;
+        font-size: 19px;
         font-weight: 300;
         text-align: center;
         margin: 0;
