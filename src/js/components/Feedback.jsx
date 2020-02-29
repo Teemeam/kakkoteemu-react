@@ -24,6 +24,9 @@ const StyledFeedback = styled.div`
     padding: 10px 20px;
     color: #fc6862;
   }
+  input::placeholder {
+    color: #fc6862;
+  }
   button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;

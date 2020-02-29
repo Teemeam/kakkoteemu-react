@@ -39,6 +39,13 @@ module.exports = {
         to: 'img',
       },
     ]),
+    // Siirrä jakokuva dist-kansioon
+    new CopyWebpackPlugin([
+      {
+        from: 'src/share.png',
+        to: '',
+      },
+    ]),
     // Siirrä .htaccess dist-kansioon
     new CopyWebpackPlugin([
       {
