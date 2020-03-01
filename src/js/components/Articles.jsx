@@ -26,7 +26,7 @@ const StyledArticles = styled.div`
   .title-wrapper > h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 32px;
     margin: 0;
   }
   .title-wrapper > h3 {
@@ -39,8 +39,11 @@ const StyledArticles = styled.div`
   .button-wrapper {
     width: 92%;
     text-align: center;
-    margin: 0 4%;
+    margin: 0 auto;
     padding: 20px 0 0 0;
+    @media (max-width: 480px) {
+      width: 275px;
+    }
   }
   .button-wrapper > button {
     border: none;
@@ -49,9 +52,9 @@ const StyledArticles = styled.div`
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     background-color: #ddd;
-    margin: 5px;
+    margin: 5px 5px 8px 5px;
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 16px;
     outline: none;
     transition: transform 0.1s ease-in-out 0s;
     :hover {
@@ -69,9 +72,9 @@ const StyledArticles = styled.div`
     cursor: pointer;
     color: white;
     background-color: rgb(0, 30, 30);
-    margin: 5px;
+    margin: 5px 5px 8px 5px;
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 16px;
     transition: transform 0.1s ease-in-out 0s;
     text-decoration: none;
     outline: none;
@@ -94,6 +97,9 @@ const StyledArticles = styled.div`
     text-align: center;
     background-color: transparent;
     cursor: text;
+    :focus {
+      outline: none;
+    }
     @media(max-width: 300px) {
       width: 92%;
       margin: 20px 4% 40px 4%;
@@ -137,7 +143,7 @@ const StyledArticles = styled.div`
   .card__text > p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
     padding: 6px 0 0 0;
     color: #fc6862;
@@ -166,7 +172,7 @@ const StyledArticles = styled.div`
   .more-wrapper > button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 16px;
     border: none;
     background-color: #fc6862;
     padding: 10px 20px;

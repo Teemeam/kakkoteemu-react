@@ -51,39 +51,46 @@ class App extends React.Component {
     const from = [0, 30, 30]; // Green
     const to = [63, 30, 30]; // Red
 
-    // Divide mouse position with window width to get a percentage
-    const division = this.state.position / this.state.width;
-
     // Declare variables for rgb values
     let r;
     let g;
     let b;
 
-    // Count r value
-    if (from[0] < to[0]) {
-      r = from[0] + ((to[0] - from[0]) * division);
-    } else if (from[0] > to[0]) {
-      r = from[0] - ((from[0] - to[0]) * division);
-    } else {
-      r = from[0];
-    }
+    // On bigger screens, count rgb values based on mouse position. On smaller screens, set background to red
+    if (this.state.width > 600) {
+      // Divide mouse position with window width to get a percentage
+      const division = this.state.position / this.state.width;
+    
+      // Count r value
+      if (from[0] < to[0]) {
+        r = from[0] + ((to[0] - from[0]) * division);
+      } else if (from[0] > to[0]) {
+        r = from[0] - ((from[0] - to[0]) * division);
+      } else {
+        r = from[0];
+      }
 
-    // Count g
-    if (from[1] < to[1]) {
-      g = from[1] + ((to[1] - from[1]) * division);
-    } else if (from[1] > to[1]) {
-      g = from[1] - ((from[1] - to[1]) * division);
-    } else {
-      g = from[1];
-    }
+      // Count g
+      if (from[1] < to[1]) {
+        g = from[1] + ((to[1] - from[1]) * division);
+      } else if (from[1] > to[1]) {
+        g = from[1] - ((from[1] - to[1]) * division);
+      } else {
+        g = from[1];
+      }
 
-    // Count b
-    if (from[2] < to[2]) {
-      b = from[2] + ((to[2] - from[2]) * division);
-    } else if (from[2] > to[2]) {
-      b = from[2] - ((from[2] - to[2]) * division);
+      // Count b
+      if (from[2] < to[2]) {
+        b = from[2] + ((to[2] - from[2]) * division);
+      } else if (from[2] > to[2]) {
+        b = from[2] - ((from[2] - to[2]) * division);
+      } else {
+        b = from[2];
+      }
     } else {
-      b = from[2];
+      r = to[0];
+      g = to[1];
+      b = to[2];
     }
 
     // Put it together

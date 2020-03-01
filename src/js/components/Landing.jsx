@@ -5,7 +5,7 @@ const StyledLanding = styled.div`
   .outer-landing-wrapper {
     width: 100%;
     height: 100vh;
-    background-color: #1c202b;
+    background-color: #1c202b; /* Fallback */
     display: table;
   }
   .inner-landing-wrapper {

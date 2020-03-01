@@ -10,7 +10,7 @@ const StyledFeedback = styled.div`
     height: 30vh;
   }
   form {
-    width: 300px;
+    width: 310px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -19,6 +19,7 @@ const StyledFeedback = styled.div`
   }
   input {
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     font-weight: 300;
     background-color: transparent;
     border: 1px solid #fc6862;
@@ -26,12 +27,17 @@ const StyledFeedback = styled.div`
     border-radius: 30px 0 0 30px;
     padding: 10px 20px;
     color: #fc6862;
+    :focus {
+      outline: none;
+    }
   }
   input::placeholder {
+    font-size: 14px;
     color: #fc6862;
   }
   button {
     font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
     font-weight: 900;
     background-color: transparent;
     border: 1px solid #fc6862;
@@ -43,6 +49,9 @@ const StyledFeedback = styled.div`
       background-color: #fc6862;
       color: rgb(0, 30, 30);
     }
+  }
+  button::-moz-focus-inner {
+    border: 0;
   }
   .thank-you {
     font-family: 'Montserrat', sans-serif;
