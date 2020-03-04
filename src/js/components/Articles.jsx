@@ -279,8 +279,8 @@ const Articles = (props) => {
         <button style={{ backgroundColor: buttonValue === '' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('') }>All</button>
         <button style={{ backgroundColor: buttonValue === 'code' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('code') }>Code</button>
         <button style={{ backgroundColor: buttonValue === 'writing' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('writing') }>Writing</button>
-        <a href='https://drive.google.com/drive/folders/1iN8jvAqSwJnkTyqAggJ1copS3PbTWcHu?usp=sharing' target='_blank'>TV</a>
-        <a href='https://drive.google.com/drive/folders/1rKNfLYwMPW8wwYPjGIDQenUsDETxSX39?usp=sharing' target='_blank'>Radio</a>
+        <a href='https://drive.google.com/drive/folders/1iN8jvAqSwJnkTyqAggJ1copS3PbTWcHu' target='_blank'>TV</a>
+        <a href='https://drive.google.com/drive/folders/1rKNfLYwMPW8wwYPjGIDQenUsDETxSX39' target='_blank'>Radio</a>
       </div>
       <div className='title-wrapper'>
         <h3>or start typing</h3>

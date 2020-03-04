@@ -75,6 +75,7 @@ const StyledFeedback = styled.div`
   }
   .thank-you {
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
     font-weight: 300;
     position: absolute;
     top: 50%;
