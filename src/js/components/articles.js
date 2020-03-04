@@ -159,4 +159,12 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        title: "Kuoppaisella tiellä ambulanssikyytikin kestää kauemmin – Suomessa on tuhansia kilometrejä huonoja teitä, katso kartasta oman kuntasi tilanne",
+        url: "https://yle.fi/uutiset/3-11228875",
+        image_id: "39-6474095e57711235dd1",
+        published: "4.3.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
