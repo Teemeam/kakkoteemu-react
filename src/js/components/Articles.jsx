@@ -9,9 +9,12 @@ const StyledArticles = styled.div`
   padding: 40px 0;
   background-color: #eee;
   .data-wrapper {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
-    @media (max-width: 620px) {
+    @media (max-width: 840px) {
+      max-width: 700px;
+    }
+    @media (max-width: 740px) {
       max-width: 400px;
     }
     @media (max-width: 430px) {
@@ -26,8 +29,11 @@ const StyledArticles = styled.div`
   .title-wrapper > h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-size: 32px;
+    font-size: 35px;
     margin: 0;
+    @media (max-width: 360px) {
+      font-size: 32px;
+    }
   }
   .title-wrapper > h3 {
     font-family: 'Montserrat', sans-serif;
@@ -41,7 +47,7 @@ const StyledArticles = styled.div`
     text-align: center;
     margin: 0 auto;
     padding: 20px 0 0 0;
-    @media (max-width: 480px) {
+    @media (max-width: 490px) {
       width: 275px;
     }
   }
@@ -74,7 +80,7 @@ const StyledArticles = styled.div`
     background-color: rgb(0, 30, 30);
     margin: 5px 5px 8px 5px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 18px;
     transition: transform 0.1s ease-in-out 0s;
     text-decoration: none;
     outline: none;
@@ -109,7 +115,7 @@ const StyledArticles = styled.div`
     display: flex;
     flex-direction: row;
     padding: 10px 0;
-    @media (max-width: 620px) {
+    @media (max-width: 740px) {
       flex-direction: column;
       padding: 0 0 30px 0;
     }
@@ -118,10 +124,10 @@ const StyledArticles = styled.div`
     background-size: cover;
     background-position: center;
     background-repeat: none;
-    width: 450px;
-    height: 150px;
-    margin: 0 15px 0 0;
-    @media (max-width: 620px) {
+    width: 550px;
+    height: 200px;
+    margin: 0 16px 0 0;
+    @media (max-width: 740px) {
       width: 100%;
       height: 0;
       margin: 0;
@@ -133,21 +139,20 @@ const StyledArticles = styled.div`
     margin: auto;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-size: 16px;
-    line-height: 1.3;
-    @media (max-width: 620px) {
+    font-size: 20px;
+    line-height: 1.45;
+    @media (max-width: 840px) {
       font-size: 18px;
-      line-height: 1.4;
     }
   }
   .card__text > p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
-    padding: 6px 0 0 0;
+    padding: 8px 0 0 0;
     color: #fc6862;
-    @media (max-width: 620px) {
+    @media (max-width: 740px) {
       margin: 0 12px;
       padding: 0;
     }
@@ -158,21 +163,21 @@ const StyledArticles = styled.div`
   }
   .card__text > a > p {
     margin: 0;
-    @media (max-width: 620px) {
+    @media (max-width: 740px) {
       padding: 10px 12px;
     }
   }
   .more-wrapper {
     text-align: center;
-    padding: 20px 0 10px 0;
-    @media(max-width: 620px) {
+    padding: 30px 0 10px 0;
+    @media(max-width: 740px) {
       padding: 0 0 10px 0;
     }
   }
   .more-wrapper > button {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     background-color: #fc6862;
     padding: 10px 20px;
@@ -186,7 +191,9 @@ const StyledArticles = styled.div`
   }
   .nothing-to-show {
     font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
     font-weight: 300;
+    line-height: 1.4;
     text-align: center;
     width: 94%;
     margin: 0 3%;
@@ -272,8 +279,8 @@ const Articles = (props) => {
         <button style={{ backgroundColor: buttonValue === '' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('') }>All</button>
         <button style={{ backgroundColor: buttonValue === 'code' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('code') }>Code</button>
         <button style={{ backgroundColor: buttonValue === 'writing' ? '#fc6862' : '#ddd' }} onClick={ e => setButtonValue('writing') }>Writing</button>
-        <a href='https://drive.google.com/open?id=0B_O6i0BSTEvJZkNsQXN0X0hCX2c' target='_blank'>TV</a>
-        <a href='https://drive.google.com/open?id=0B_O6i0BSTEvJem9rREJndkdwXzg' target='_blank'>Radio</a>
+        <a href='https://drive.google.com/drive/folders/1iN8jvAqSwJnkTyqAggJ1copS3PbTWcHu?usp=sharing' target='_blank'>TV</a>
+        <a href='https://drive.google.com/drive/folders/1rKNfLYwMPW8wwYPjGIDQenUsDETxSX39?usp=sharing' target='_blank'>Radio</a>
       </div>
       <div className='title-wrapper'>
         <h3>or start typing</h3>

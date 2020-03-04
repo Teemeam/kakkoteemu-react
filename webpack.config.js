@@ -2,10 +2,11 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
-module.exports = {
+module.exports = env => ({
   entry: './src/index.js',
-  mode: 'development',
+  mode: env,
   devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -23,6 +24,22 @@ module.exports = {
       }
     ]
   },
+  // Minify JS
+  ...(env === 'production' ? {
+    optimization: {
+      minimizer: [
+        new TerserPlugin({
+          parallel: true,
+          sourceMap: false,
+          terserOptions: {
+            ecma: 5,
+          },
+        }),
+      ],
+      namedModules: true,
+      namedChunks: true,
+    },
+  } : {}),
   devServer: {
     contentBase: path.join(__dirname, 'public')
   },
@@ -39,21 +56,21 @@ module.exports = {
         to: 'img',
       },
     ]),
-    // Siirrä jakokuva dist-kansioon
+    // Move share image to dist folder
     new CopyWebpackPlugin([
       {
         from: 'src/share.png',
         to: '',
       },
     ]),
-    // Siirrä .htaccess dist-kansioon
+    // Move .htaccess to dist folder
     new CopyWebpackPlugin([
       {
         from: '.htaccess',
         to: '',
       },
     ]),
-    // Sirrä robots.txt dist-kansioon
+    // Move robots.txt to dist folder
     new CopyWebpackPlugin([
       {
         from: 'robots.txt',
@@ -61,5 +78,5 @@ module.exports = {
       },
     ])
   ]
-}
+});
 

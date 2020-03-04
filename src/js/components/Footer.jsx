@@ -22,25 +22,31 @@ const StyledFooter = styled.div`
   }
   div > div > h3 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 900;
     text-align: center;
     margin: 0;
     padding: 10px 0;
     color: #fb544d;
     mix-blend-mode: screen;
+    @media (max-width: 1400px) {
+      font-size: 22px;
+    }
     @media (max-width: 820px) {
       padding: 20px 0 10px 0;
     }
   }
   div > div > p, a {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 300;
     text-align: center;
     margin: 0;
     color: #fb544d;
     mix-blend-mode: screen;
+    @media (max-width: 1400px) {
+      font-size: 20px;
+    }
   }
   .copyright {
     text-align: center;

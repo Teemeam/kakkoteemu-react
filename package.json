@@ -4,8 +4,8 @@
   "description": "Teemu's homepage",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open --hot --config webpack.config.js --env=development",
+    "build": "webpack --mode production --config webpack.config.js --env=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -16,7 +16,8 @@
     "@emotion/styled": "^10.0.27",
     "mini-css-extract-plugin": "^0.9.0",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "terser-webpack-plugin": "^2.3.5"
   },
   "devDependencies": {
     "@babel/core": "^7.8.3",

@@ -22,10 +22,13 @@ const StyledLanding = styled.div`
     font-weight: 900;
     margin: 0;
     padding: 0;
-    font-size: 140px;
+    font-size: 180px;
     line-height: 1.1;
     mix-blend-mode: screen;
     white-space: nowrap;
+    @media (max-width: 1400px) {
+      font-size: 140px;
+    }
     @media (max-width: 900px) {
       font-size: 16.5vw;
     }
@@ -36,11 +39,20 @@ const StyledLanding = styled.div`
     font-weight: 300;
     margin: 0 3% 0 0;
     padding: 30px 0 0 0;
-    font-size: 30px;
+    font-size: 35px;
     line-height: 1.1;
     mix-blend-mode: screen;
+    @media (max-width: 1400px) {
+      font-size: 30px;
+    }
     @media (max-width: 900px) {
       padding: 20px 0 0 0;
+    }
+    @media (max-width: 360px) {
+      font-size: 27px;
+    }
+    @media (max-width: 330px) {
+      font-size: 26px;
     }
   }
 `;

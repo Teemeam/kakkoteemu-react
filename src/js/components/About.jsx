@@ -15,15 +15,22 @@ const StyledAbout = styled.div`
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     text-align: center;
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
-    font-size: 28px;
+    font-size: 35px;
     line-height: 1.3;
     color: #fc6862;
+    @media (max-width: 1400px) {
+      max-width: 500px;
+      font-size: 30px;
+    }
     @media (max-width: 520px) {
       max-width: none;
       width: 94%;
       margin: 0 3%;
+    }
+    @media (max-width: 360px) {
+      font-size: 27px;
     }
   }
   div > p > span {
