@@ -259,7 +259,7 @@ const Articles = (props) => {
     // Create cards
     .map((item, key) =>
       <div className='card' key={ 'container_' + item.title }>
-        <div className='card__image' key={ 'img_' + item.title } href={ item.url } style={{ backgroundImage: 'url(' + yle_url + item.image_id + '.jpg)' }}></div>
+        <div className='card__image' key={ 'img_' + item.title } href={ item.url } style={{ backgroundImage: item.type === 'web' ? 'url(' + yle_url + item.image_id + '.jpg)' : 'url(' + item.image_id + ')' }}></div>
         <div className='card__text' key={ 'title_' + item.title }>
           <a href={ item.url } target='_blank'>
             <p>{ item.title }</p>

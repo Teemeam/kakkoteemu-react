@@ -18,6 +18,32 @@ module.exports = env => ({
         test: /\.(js|jsx)$/, 
         use: 'babel-loader'
       },
+      // All jpgs to dist/img/print folder
+      {
+        test: /\.(jpe?g)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'img/print',
+              name: '[name].[ext]'
+            },
+          },
+        ],
+      },
+      // All pdfs to dist/print folder
+      {
+        test: /\.(pdf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'print',
+              name: '[name].[ext]'
+            },
+          },
+        ],
+      },
       {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
@@ -50,10 +76,11 @@ module.exports = env => ({
     new MiniCssExtractPlugin({
       filename: 'bundle.css'
     }),
+    // Move favicon files to dist/img/favicon folder
     new CopyWebpackPlugin([
       {
-        from: 'src/img/',
-        to: 'img',
+        from: 'src/img/favicon/',
+        to: 'img/favicon',
       },
     ]),
     // Move share image to dist folder

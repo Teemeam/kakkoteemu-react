@@ -40,7 +40,7 @@ const StyledLanding = styled.div`
     margin: 0 3% 0 0;
     padding: 30px 0 0 0;
     font-size: 35px;
-    line-height: 1.1;
+    line-height: 1.2;
     mix-blend-mode: screen;
     @media (max-width: 1400px) {
       font-size: 30px;
