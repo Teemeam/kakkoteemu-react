@@ -31,19 +31,6 @@ module.exports = env => ({
           },
         ],
       },
-      // All pdfs to dist/print folder
-      {
-        test: /\.(pdf)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              outputPath: 'print',
-              name: '[name].[ext]'
-            },
-          },
-        ],
-      },
       {
         test: /\.scss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']

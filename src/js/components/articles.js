@@ -1,10 +1,7 @@
-/* ------ Import print articles ------ */
-import avautuvat_sotilassaaret from "./../../print/avautuvat-sotilassaaret.pdf";
-import avautuvat_sotilassaaret_img from "./../../img/print/avautuvat-sotilassaaret.jpg";
-import kutsuntaliite from "./../../print/kutsuntaliite-2014.pdf";
-import kutsuntaliite_img from "./../../img/print/kutsuntaliite-2014.jpg";
-import kaupunkisotilas_ja_siviili from "./../../print/kaupunkisotilas-ja-siviili.pdf";
-import kaupunkisotilas_ja_siviili_img from "./../../img/print/kaupunkisotilas-ja-siviili.jpg";
+/* ------ Import print images ------ */
+import avautuvat_sotilassaaret from "./../../img/print/avautuvat-sotilassaaret.jpg";
+import kutsuntaliite from "./../../img/print/kutsuntaliite-2014.jpg";
+import kaupunkisotilas_ja_siviili from "./../../img/print/kaupunkisotilas-ja-siviili.jpg";
 
 export const articles = [
     {
@@ -199,8 +196,8 @@ export const articles = [
     {
         type: "print",
         title: "Avautuvat sotilassaaret – Puolustusvoimien vuokralaisuus sotilassaarilla päättyy. Miltä saarten tulevaisuus näyttää?",
-        url: avautuvat_sotilassaaret,
-        image_id: avautuvat_sotilassaaret_img,
+        url: "https://drive.google.com/file/d/1qbTA0E3qbq5oDLrAxuo-_cNpJsqZMqxa/view?usp=sharing",
+        image_id: avautuvat_sotilassaaret,
         published: "26.6.2014",
         publisher: "Ruotuväki",
         role: "writing",
@@ -208,8 +205,8 @@ export const articles = [
     {
         type: "print",
         title: "Kutsuntaliite 2014 – Kutsuntojen kautta asevelvollisuuden matkalle",
-        url: kutsuntaliite,
-        image_id: kutsuntaliite_img,
+        url: "https://drive.google.com/file/d/15uCUsIVqhioFFdOI7-bm6ahZqHcm97TL/view?usp=sharing",
+        image_id: kutsuntaliite,
         published: "17.7.2014",
         publisher: "Ruotuväki",
         role: "writing",
@@ -217,8 +214,8 @@ export const articles = [
     {
         type: "print",
         title: "Kaupunkisotilas & siviili",
-        url: kaupunkisotilas_ja_siviili,
-        image_id: kaupunkisotilas_ja_siviili_img,
+        url: "https://drive.google.com/file/d/1PQSTiNn24AFKnxosjzPy37TScCqIwDjt/view?usp=sharing",
+        image_id: kaupunkisotilas_ja_siviili,
         published: "3.4.2014",
         publisher: "Ruotuväki",
         role: "writing",
