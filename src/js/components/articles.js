@@ -2,6 +2,7 @@
 import avautuvat_sotilassaaret from "./../../img/print/avautuvat-sotilassaaret.jpg";
 import kutsuntaliite from "./../../img/print/kutsuntaliite-2014.jpg";
 import kaupunkisotilas_ja_siviili from "./../../img/print/kaupunkisotilas-ja-siviili.jpg";
+import yhteiskuntaa_karkuun from "./../../img/print/yhteiskuntaa-karkuun-kiven-sisaan.jpg";
 
 export const articles = [
     {
@@ -218,6 +219,15 @@ export const articles = [
         image_id: kaupunkisotilas_ja_siviili,
         published: "3.4.2014",
         publisher: "Ruotuväki",
+        role: "writing",
+    },
+    {
+        type: "print",
+        title: "Yhteiskuntaa karkuun kiven sisään",
+        url: "https://drive.google.com/file/d/1yg0uMZFYjl6qvSv-ZxFdN_qMgwMOKglo/view?usp=sharing",
+        image_id: yhteiskuntaa_karkuun,
+        published: "15.1.2015",
+        publisher: "Utain",
         role: "writing",
     },
 ]
