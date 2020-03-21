@@ -230,4 +230,13 @@ export const articles = [
         publisher: "Utain",
         role: "writing",
     },
+    {
+        type: "web",
+        title: "Jos koronatilanne ahdistaa, on hyvä hetki pysähtyä miettimään omaa elämää – testaa tästä, kuinka onnellinen olet",
+        url: "https://yle.fi/uutiset/3-11263263",
+        image_id: "39-6556815e7470b15a6e1",
+        published: "21.3.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
