@@ -239,4 +239,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Ylen selvitys: Liikennemäärä Uudenmaan rajoilla on jo merkittävästi vähentynyt",
+        url: "https://yle.fi/uutiset/3-11277639",
+        image_id: "39-6566855e78b2ecf3b81",
+        published: "26.3.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
