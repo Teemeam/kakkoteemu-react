@@ -248,4 +248,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Mikä on surumuna, mitä kertoo munan koodi ja onko vapaa kana vapaa? Suomalainen syö 12 kiloa munia vuodessa ja siksi on hyvä tietää, mitä syö",
+        url: "https://yle.fi/uutiset/3-11290114",
+        image_id: "13-3-11290540",
+        published: "4.4.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
