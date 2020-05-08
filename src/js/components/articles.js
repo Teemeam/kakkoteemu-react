@@ -257,4 +257,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Tulipalo saa yleensä alkunsa liedeltä, mutta vanha vitsaus aiheuttaa edelleen eniten kuolemia – katso kartasta, missä ja miten rakennukset palavat Tampereella",
+        url: "https://yle.fi/uutiset/3-11325984",
+        image_id: "13-3-11341810",
+        published: "8.5.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
