@@ -212,7 +212,8 @@ const Articles = (props) => {
   const [numberOfCards, setNumberOfCards] = useState(3);
 
   // Url before image ids
-  const yle_url = 'https://images.cdn.yle.fi/image/upload/f_auto,fl_lossy,q_auto%3Aeco,w_386,h_258,c_fill,g_faces,dpr_1.0/';
+  const dpr = window.devicePixelRatio || 1;
+  const yle_url = 'https://images.cdn.yle.fi/image/upload/w_400,h_264,f_auto,fl_lossy,q_auto:best,c_fill,dpr_' + dpr + '/';
 
   // Filter results based on buttons and input
   function filter_articles(e) {
