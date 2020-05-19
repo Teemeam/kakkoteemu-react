@@ -266,4 +266,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Ylen selvitys: toimeentulotuen uudistus on epäonnistunut kaikkein heikompiosaisten kohdalla – lue Jaron, Sirpan, Ilmin ja Johannan tarinat köyhyydestä",
+        url: "https://yle.fi/uutiset/3-11351353",
+        image_id: "13-3-11350850",
+        published: "19.5.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
