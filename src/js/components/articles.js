@@ -275,4 +275,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Kysyimme mitä on hyvä elämä ja näin suomalaiset vastasivat – testaa ovatko sinulle tärkeät asiat tärkeitä myös muille",
+        url: "https://yle.fi/uutiset/3-11360661",
+        image_id: "39-5696215cfe5f8d5cfc3",
+        published: "22.5.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
