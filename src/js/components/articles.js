@@ -284,4 +284,22 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Henkirikokset rajussa kasvussa tänä keväänä, poliisi: \"Ei ole kontrollia, minne veitsen isku päätyy\" – katso kartalta 2000-luvun Suomen väkivaltaisimmat paikat",
+        url: "https://yle.fi/uutiset/3-11383347",
+        image_id: "13-3-11405609",
+        published: "17.6.2020",
+        publisher: "Yle",
+        role: "code",
+    },
+    {
+        type: "web",
+        title: "35 000 miestä rakensi Suomen halki valtavan rakennelman, joka kestää vaikka tykkitulen – katso, miten Salpalinja syntyi ja mitä siitä on jäljellä",
+        url: "https://yle.fi/uutiset/3-11403518",
+        image_id: "13-3-11408424",
+        published: "21.6.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
