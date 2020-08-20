@@ -302,4 +302,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Nyt on paras hetki rakentaa muodikas ötökkähotelli, mutta asuuko niissä oikeasti hyönteisiä? – Katso, millaisia asukkaita hotellissamme majailee",
+        url: "https://yle.fi/uutiset/3-11417908",
+        image_id: "13-3-11454139",
+        published: "23.7.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
