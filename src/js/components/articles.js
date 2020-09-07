@@ -311,4 +311,22 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Katso, kuinka vihreä kotikuntasi on – vertasimme Suomen kaikkia kuntia viidellä eri kriteerillä, ja mallioppilaat erottuvat joukosta",
+        url: "https://yle.fi/uutiset/3-11504485",
+        image_id: "13-3-11513638",
+        published: "3.9.2020",
+        publisher: "Yle",
+        role: "code",
+    },
+    {
+        type: "web",
+        title: "Saaʹmi ouddoummuvaali võboršeǩ-kueiʹtes ǩeâsttâʹlle vuäʹmm tååimast – Kolttien luottamusmiesvaalin ehdokaskaksikko kisaa ikivanhasta luottamustoimesta",
+        url: "https://yle.fi/uutiset/3-11516665",
+        image_id: "39-7124345f477ebe917ac",
+        published: "3.9.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
