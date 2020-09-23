@@ -329,4 +329,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Moni meistä ajattelee kuin Jari Matikainen: Biojätteen lajittelu on liian hankalaa – siksi valtava määrä ruokaa poltetaan sekajätteen mukana",
+        url: "https://yle.fi/uutiset/3-11533305",
+        image_id: "39-7188865f605bb2a1dd1",
+        published: "21.9.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
