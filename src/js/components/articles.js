@@ -338,4 +338,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Katso kartasta, mitkä rikollisorganisaatiot kokoontuvat kotikulmillasi – KRP: jengitilanne voimakkaassa muutoksessa United Brotherhoodin väliaikaisen toimintakiellon vuoksi",
+        url: "https://yle.fi/uutiset/3-11542665",
+        image_id: "14-svyle-499531971e593882",
+        published: "26.9.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
