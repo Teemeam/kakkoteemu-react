@@ -347,4 +347,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "\"Nainen ei saa olla seksikäs, mies ei saa itkeä\" – 1 200 opiskelijaa vastasi, miten sukupuolinormit vaikuttavat heidän elämäänsä",
+        url: "https://yle.fi/uutiset/3-11570381",
+        image_id: "13-3-11580957",
+        published: "13.10.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
