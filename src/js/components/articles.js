@@ -365,4 +365,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Mitä teet, kun pieni koululainen kertoo nähneensä pornoa kaverin puhelimesta? Testaa pelissä, miten selviydytte vaikeasta paikasta yhdessä",
+        url: "https://yle.fi/uutiset/3-11603623",
+        image_id: "13-3-11623822",
+        published: "9.11.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
