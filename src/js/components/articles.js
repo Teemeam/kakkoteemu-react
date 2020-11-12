@@ -374,4 +374,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Onnea uusille ylioppilaille! Ylen Ylioppilaskoneesta näet, kuka saa valkolakin",
+        url: "https://yle.fi/uutiset/3-11615342",
+        image_id: "13-3-11633000",
+        published: "12.11.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
