@@ -383,4 +383,22 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Ylen toimittaja soluttautui hämärille eläinmarkkinoille – koirasusien kasvatus ja myynti kiellettiin lailla, mutta kauppa käy yhä",
+        url: "https://yle.fi/uutiset/3-11689345",
+        image_id: "39-7524315fd0ca55e7dcc",
+        published: "10.12.2020",
+        publisher: "Yle",
+        role: "code",
+    },
+    {
+        type: "web",
+        title: "Kun Mannerheim halusi viettää löhölomaa, hän lähti metsästysmajalleen, jossa ei koskaan metsästetty – tutustu Marskin majaan",
+        url: "https://yle.fi/uutiset/3-11688673",
+        image_id: "13-3-11689391",
+        published: "11.12.2020",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
