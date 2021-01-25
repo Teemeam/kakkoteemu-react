@@ -401,4 +401,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Suomalaisten ruokavalio kuuluu EU:n pahiksiin – kokeile Ylen ruokakoneella, miten lounaalla tekemäsi valinnat vaikuttavat ympäristöön",
+        url: "https://yle.fi/uutiset/3-11699920",
+        image_id: "13-3-11714060",
+        published: "1.1.2021",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
