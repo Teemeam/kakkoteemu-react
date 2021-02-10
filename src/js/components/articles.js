@@ -410,4 +410,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Moni on tietämättään säilyttänyt dna-tutkijan aarretta piironginlaatikossa – suomenhevosen alkuperää selvitetään vanhojen näytteiden avulla",
+        url: "https://yle.fi/uutiset/3-11772583",
+        image_id: "39-770101601be266175b9",
+        published: "7.2.2021",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
