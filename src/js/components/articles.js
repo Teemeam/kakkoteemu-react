@@ -419,4 +419,22 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Yle selvitti: Kunnat säästivät miljoonia euroja kulttuurirahoista samalla kun korona vei taiteilijoiden työt – katso kotikuntasi tilanne",
+        url: "https://yle.fi/uutiset/3-11807638",
+        image_id: "13-3-11811007",
+        published: "28.2.2021",
+        publisher: "Yle",
+        role: "code",
+    },
+    {
+        type: "web",
+        title: "Hiki valui otsalta, kun Jasmin Muqolli näki äänisaaliinsa – kuntapolitiikka opetti ensikertalaiselle paljon, mutta tuotti myös pettymyksiä",
+        url: "https://yle.fi/uutiset/3-11795312",
+        image_id: "39-780611603f94594f14e",
+        published: "6.3.2021",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
