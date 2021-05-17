@@ -437,4 +437,22 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Selvitimme kaikissa Manner-Suomen kunnissa, mikä niissä puhuttaa vaalien alla – kuuntele Kuntarundi-keskustelu omasta kotikunnastasi",
+        url: "https://yle.fi/uutiset/3-11916600",
+        image_id: "39-8028036093a317a6f11",
+        published: "11.5.2021",
+        publisher: "Yle",
+        role: "code",
+    },
+    {
+        type: "web",
+        title: "Selvitimme kaikkien Manner-Suomen kuntien nykykunnon ja tulevaisuuden näkymät – katso kotikuntasi tilanne Ylen Kuntatutkasta",
+        url: "https://yle.fi/uutiset/3-11925581",
+        image_id: "39-805993609d5f67656a5",
+        published: "14.5.2021",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
