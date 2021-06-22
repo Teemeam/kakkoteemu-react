@@ -482,4 +482,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Näin posti kulkee – seurasimme kirjeiden matkaa 38 reitillä gps-lähettimillä",
+        url: "https://yle.fi/uutiset/3-11973043",
+        image_id: "39-82300960cc9e87665f6",
+        published: "21.6.2021",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
