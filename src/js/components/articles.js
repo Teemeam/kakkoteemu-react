@@ -491,4 +491,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Yle selvitti: Naiset ottivat aiempaa enemmän kuntapolitiikan huippupaikkoja – katso, ketkä käyttävät valtaa sinun kotikunnassasi",
+        url: "https://yle.fi/uutiset/3-12092060",
+        image_id: "39-85135861389eb2d7b08",
+        published: "10.9.2021",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
