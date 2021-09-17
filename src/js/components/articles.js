@@ -358,15 +358,6 @@ export const articles = [
     },
     {
         type: "web",
-        title: "George Floydin kuolinkaupunki on hengenvaarallinen monelle mustalle – Minneapolisin kadut tunteva Queen haluaa estää uudet kuolemat, ja yksi ratkaisu löytyy asumisesta",
-        url: "https://yle.fi/uutiset/3-11603775",
-        image_id: "39-7355115f997c1cb3aea",
-        published: "1.11.2020",
-        publisher: "Yle",
-        role: "code",
-    },
-    {
-        type: "web",
         title: "Mitä teet, kun pieni koululainen kertoo nähneensä pornoa kaverin puhelimesta? Testaa pelissä, miten selviydytte vaikeasta paikasta yhdessä",
         url: "https://yle.fi/uutiset/3-11603623",
         image_id: "13-3-11623822",
