@@ -7,8 +7,9 @@ _Published 29.2.2020._
 ![](/src/share.png)
 
 ## **Used technologies**
-* React 16.12.0
-* [@emotion/styled 10.0.27](https://www.npmjs.com/package/@emotion/styled)
+* React 17.0.2
+* Webpack 5.4.1
+* [@emotion/styled 11.3.0](https://www.npmjs.com/package/@emotion/styled)
 
 ## **npm start**
 Run project locally at http://localhost:8080/.

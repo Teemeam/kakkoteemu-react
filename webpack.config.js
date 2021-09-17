@@ -1,8 +1,11 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require('webpack');
+
+/* Webpack plugins */
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = env => ({
   entry: './src/index.js',
@@ -18,7 +21,7 @@ module.exports = env => ({
         test: /\.(js|jsx)$/, 
         use: 'babel-loader'
       },
-      // All jpgs to dist/img/print folder
+      /* All jpgs to dist/img/print folder */
       {
         test: /\.(jpe?g)$/,
         use: [
@@ -37,17 +40,19 @@ module.exports = env => ({
       }
     ]
   },
-  // Minify JS
+  /* Minify JS */
   ...(env === 'production' ? {
     optimization: {
       minimizer: [
-        new TerserPlugin({
-          parallel: true,
-          sourceMap: false,
-          terserOptions: {
-            ecma: 5,
-          },
-        }),
+        (compiler) => {
+          new TerserPlugin({
+            parallel: true,
+            sourceMap: false,
+            terserOptions: {
+              ecma: 5,
+            },
+          }).apply(compiler);
+        },
       ],
       namedModules: true,
       namedChunks: true,
@@ -63,34 +68,30 @@ module.exports = env => ({
     new MiniCssExtractPlugin({
       filename: 'bundle.css'
     }),
-    // Move favicon files to dist/img/favicon folder
-    new CopyWebpackPlugin([
-      {
-        from: 'src/img/favicon/',
-        to: 'img/favicon',
-      },
-    ]),
-    // Move share image to dist folder
-    new CopyWebpackPlugin([
-      {
-        from: 'src/share.png',
-        to: '',
-      },
-    ]),
-    // Move .htaccess to dist folder
-    new CopyWebpackPlugin([
-      {
-        from: '.htaccess',
-        to: '',
-      },
-    ]),
-    // Move robots.txt to dist folder
-    new CopyWebpackPlugin([
-      {
-        from: 'robots.txt',
-        to: '',
-      },
-    ])
+    new CopyWebpackPlugin({
+      patterns: [
+        /* Move favicon files to dist/img/favicon folder */
+        {
+          from: 'src/img/favicon/',
+          to: 'img/favicon',
+        },
+        /* Move share image to dist folder */
+        {
+          from: 'src/share.png',
+          to: '',
+        },
+        /* Move .htaccess to dist folder */
+        {
+          from: '.htaccess',
+          to: '',
+        },
+        /* Move robots.txt to dist folder */
+        {
+          from: 'robots.txt',
+          to: '',
+        },
+      ]
+    })
   ]
 });
 
