@@ -500,4 +500,22 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Kummallinen kulkija tuli taloon, söi ja kuoli – perheeltään Ruotsissa mystisesti kadonnut mies eli kymmeniä vuosia ammattikulkurina Suomessa",
+        url: "https://yle.fi/uutiset/3-12144231",
+        image_id: "39-86703761681e9387dbb",
+        published: "16.10.2021",
+        publisher: "Yle",
+        role: "code",
+    },
+    {
+        type: "web",
+        title: "Vuosikymmen sitten turkulaiset keksivät rakentaa hienon sillan, ja sen jälkeen kaikki mahdollinen meni pieleen: tämä on Logomon sillan tarina",
+        url: "https://yle.fi/uutiset/3-12110486",
+        image_id: "39-838588610a6877035fa",
+        published: "17.10.2021",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
