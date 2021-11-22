@@ -509,4 +509,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Ruoka kallistuu, kun ryhdymme maksamaan sen ilmastosynneistä – kokeile Ylen koneella, mitä kauppalaskullesi tapahtuu",
+        url: "https://yle.fi/uutiset/3-12193590",
+        image_id: "39-88143461975460538ab",
+        published: "19.11.2021",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
