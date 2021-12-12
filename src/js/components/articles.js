@@ -518,4 +518,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Sinä äänestät, kuka päättää terveydenhoidostasi – lue 13 kysymystä ja vastausta, niin pääset kärryille tammikuun aluevaaleista",
+        url: "https://yle.fi/uutiset/3-12176668",
+        image_id: "13-3-12207049",
+        published: "30.11.2021",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
