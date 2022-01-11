@@ -527,4 +527,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Teimme pelin, jota pelaamalla tiedät, mistä äänestämme aluevaaleissa – tai jos et tiedä, eliminoimme sinut",
+        url: "https://yle.fi/uutiset/3-12232988",
+        image_id: "39-89907461d5adb3aa315",
+        published: "11.1.2022",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
