@@ -536,4 +536,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Kokeile, miltä maailma näyttää näkövammaisen, pyörätuolilla liikkuvan ja hahmotushäiriöisen silmin",
+        url: "https://yle.fi/uutiset/3-12234621",
+        image_id: "39-90182961e12ac1e4088",
+        published: "15.1.2022",
+        publisher: "Yle",
+        role: "code",
+    },
 ]

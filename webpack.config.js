@@ -55,11 +55,13 @@ module.exports = env => ({
         },
       ],
       namedModules: true,
-      namedChunks: true,
+      namedChunks: true
     },
   } : {}),
   devServer: {
-    contentBase: path.join(__dirname, 'public')
+    static: {
+      directory: path.resolve(__dirname, 'public')
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({

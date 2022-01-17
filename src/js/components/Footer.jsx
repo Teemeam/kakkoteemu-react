@@ -78,7 +78,7 @@ const Footer = (props) => {
           <p><a href='https://twitter.com/kakkoteemu' target='blank'>Twitter</a>, <a href='https://fi.linkedin.com/in/kakkoteemu' target='blank'>LinkedIn</a>, <a href='https://github.com/teemeam' target='blank'>GitHub</a></p>
         </div>
       </div>
-      <p className='copyright'>&copy; 2015–2021</p>
+      <p className='copyright'>&copy; 2015–2022</p>
     </StyledFooter>
   );
 };
