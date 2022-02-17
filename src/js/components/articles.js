@@ -545,4 +545,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Rokotteista puhuminen päättyy herkästi jankkaamiseen, riitaan ja rikkoutuneisiin väleihin – onnistutko keskustelemaan botin kanssa kunnioittavasti?",
+        url: "https://yle.fi/uutiset/3-12302695",
+        image_id: "39-914863620a3264b79aa",
+        published: "15.2.2022",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
