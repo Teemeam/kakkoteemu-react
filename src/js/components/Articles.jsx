@@ -298,7 +298,7 @@ const Articles = (props) => {
 
       <div className='more-wrapper'>
         { filtered_articles.length > 3 && numberOfCards < filtered_articles.length ?
-        <button onClick={ () => setNumberOfCards(numberOfCards + 2) }>Show more</button> : null }
+        <button onClick={ () => setNumberOfCards(numberOfCards + 3) }>Show more</button> : null }
         { filtered_articles.length > 3 && numberOfCards >= filtered_articles.length ?
         <button onClick={ () => setNumberOfCards(3) }>Show less</button> : null }
       </div>
