@@ -8,7 +8,7 @@ _Published 29.2.2020._
 
 ## **Used technologies**
 * React 17.0.2
-* Webpack 5.41.0
+* Webpack 5.70.0
 * [@emotion/styled 11.3.0](https://www.npmjs.com/package/@emotion/styled)
 
 ## **npm start**
