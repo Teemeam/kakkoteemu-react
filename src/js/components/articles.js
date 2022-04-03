@@ -554,4 +554,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Joseph ja Mohamed kaapattiin lapsena, ja heistä tehtiin hirviömäisiä sotilaita – nyt he ovat rikkinäisiä aikuisia, jotka katuvat tekojaan",
+        url: "https://yle.fi/uutiset/3-12360693",
+        image_id: "39-9366296246c24828c94",
+        published: "3.4.2022",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
