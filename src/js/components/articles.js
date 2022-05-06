@@ -563,4 +563,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Mika Aaltolan perheessä on kolme harvinaista karvatonta terrieriä – katso, montako tietyn rotuista koiraa on kotipaikkakunnallasi",
+        url: "https://yle.fi/uutiset/3-12411117",
+        image_id: "39-947451626a530f88821",
+        published: "6.5.2022",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
