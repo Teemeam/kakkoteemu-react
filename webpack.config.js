@@ -82,16 +82,16 @@ module.exports = env => ({
           from: 'src/share.png',
           to: '',
         },
-        /* Move .htaccess to dist folder */
+        /* Move .htaccess to dist folder
         {
           from: '.htaccess',
           to: '',
-        },
-        /* Move robots.txt to dist folder */
+        }, */
+        /* Move robots.txt to dist folder
         {
           from: 'robots.txt',
           to: '',
-        },
+        }, */
       ]
     })
   ]
