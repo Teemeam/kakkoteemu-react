@@ -572,4 +572,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Vikkeläliikkeinen murhaaja sai nimensä hukuttamalla uhrinsa kanaliin, jonka pohjassa muhii nyt ikävä yllätys",
+        url: "https://yle.fi/uutiset/3-12511723",
+        image_id: "13-3-12517618",
+        published: "3.7.2022",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
