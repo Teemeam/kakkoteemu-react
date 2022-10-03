@@ -581,4 +581,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Tässä pelissä kohtaat mahdottomia mukuloita ja kiukkuisia vanhempia – kokeile, selviätkö opettajana, terkkarina tai junnuvalmentajana",
+        url: "https://yle.fi/aihe/a/20-10003220",
+        image_id: "39-1012807633187af00def",
+        published: "1.10.2022",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
