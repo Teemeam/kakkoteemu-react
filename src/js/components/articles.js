@@ -367,15 +367,6 @@ export const articles = [
     },
     {
         type: "web",
-        title: "Onnea uusille ylioppilaille! Ylen Ylioppilaskoneesta näet, kuka saa valkolakin",
-        url: "https://yle.fi/uutiset/3-11615342",
-        image_id: "13-3-11633000",
-        published: "12.11.2020",
-        publisher: "Yle",
-        role: "code",
-    },
-    {
-        type: "web",
         title: "Ylen toimittaja soluttautui hämärille eläinmarkkinoille – koirasusien kasvatus ja myynti kiellettiin lailla, mutta kauppa käy yhä",
         url: "https://yle.fi/uutiset/3-11689345",
         image_id: "39-7524315fd0ca55e7dcc",
