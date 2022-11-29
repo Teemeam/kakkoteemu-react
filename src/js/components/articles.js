@@ -581,4 +581,13 @@ export const articles = [
         publisher: "Yle",
         role: "code",
     },
+    {
+        type: "web",
+        title: "Mitä jos Linnan juhlat olisivat vaarassa peruuntua, ja kaikki olisi sinusta kiinni? Tässä pelissä valintasi ratkaisevat itsenäisyyspäivän kohtalon",
+        url: "https://yle.fi/aihe/a/20-10003769",
+        image_id: "39-10407656385b40c8e6e5",
+        published: "29.11.2022",
+        publisher: "Yle",
+        role: "code",
+    },
 ]
