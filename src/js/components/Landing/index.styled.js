@@ -1,7 +1,6 @@
-import React from 'react';
 import styled from '@emotion/styled';
 
-const StyledLanding = styled.div`
+export const Container = styled.div`
   .outer-landing-wrapper {
     width: 100%;
     height: 100vh;
@@ -56,18 +55,3 @@ const StyledLanding = styled.div`
     }
   }
 `;
-
-const Landing = (props) => {
-  return (
-    <StyledLanding>
-      <div style={{ backgroundColor: props.bgColor }} className='outer-landing-wrapper'>
-        <div className='inner-landing-wrapper'>
-          <h1 className='landing-title'>Hey,</h1>
-          <h1 className='landing-title'>I'm Teemu</h1>
-          <h2 className='landing-description'>a Finnish programmer journalist</h2>
-        </div>
-      </div>
-    </StyledLanding>);
-};
-
-export default Landing;

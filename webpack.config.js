@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 
 /* Webpack plugins */
 const CopyWebpackPlugin = require('copy-webpack-plugin');
@@ -7,19 +6,19 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
-module.exports = env => ({
+module.exports = (env) => ({
   entry: './src/index.js',
   mode: env,
   devtool: 'inline-source-map',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/, 
-        use: 'babel-loader'
+        test: /\.(js|jsx)$/,
+        use: 'babel-loader',
       },
       /* All jpgs to dist/img/print folder */
       {
@@ -29,46 +28,48 @@ module.exports = env => ({
             loader: 'file-loader',
             options: {
               outputPath: 'img/print',
-              name: '[name].[ext]'
+              name: '[name].[ext]',
             },
           },
         ],
       },
       {
         test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
-      }
-    ]
+        use: ['style-loader', 'css-loader', 'sass-loader'],
+      },
+    ],
   },
   /* Minify JS */
-  ...(env === 'production' ? {
-    optimization: {
-      minimizer: [
-        (compiler) => {
-          new TerserPlugin({
-            parallel: true,
-            sourceMap: false,
-            terserOptions: {
-              ecma: 5,
+  ...(env === 'production'
+    ? {
+        optimization: {
+          minimizer: [
+            (compiler) => {
+              new TerserPlugin({
+                parallel: true,
+                sourceMap: false,
+                terserOptions: {
+                  ecma: 5,
+                },
+              }).apply(compiler);
             },
-          }).apply(compiler);
+          ],
+          namedModules: true,
+          namedChunks: true,
         },
-      ],
-      namedModules: true,
-      namedChunks: true
-    },
-  } : {}),
+      }
+    : {}),
   devServer: {
     static: {
-      directory: path.resolve(__dirname, 'public')
-    }
+      directory: path.resolve(__dirname, 'public'),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
     }),
     new MiniCssExtractPlugin({
-      filename: 'bundle.css'
+      filename: 'bundle.css',
     }),
     new CopyWebpackPlugin({
       patterns: [
@@ -82,18 +83,7 @@ module.exports = env => ({
           from: 'src/share.png',
           to: '',
         },
-        /* Move .htaccess to dist folder
-        {
-          from: '.htaccess',
-          to: '',
-        }, */
-        /* Move robots.txt to dist folder
-        {
-          from: 'robots.txt',
-          to: '',
-        }, */
-      ]
-    })
-  ]
+      ],
+    }),
+  ],
 });
-
