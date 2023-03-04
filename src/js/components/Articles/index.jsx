@@ -18,15 +18,12 @@ const Articles = () => {
 
   // Url before image ids
   const dpr = window.devicePixelRatio || 1;
-  const yle_url =
-    'https://images.cdn.yle.fi/image/upload/w_400,h_264,f_auto,fl_lossy,q_auto:best,c_fill,dpr_' +
-    dpr +
-    '/';
+  const yle_url = 'https://images.cdn.yle.fi/image/upload/w_400,h_264,f_auto,fl_lossy,q_auto:best,c_fill,dpr_' + dpr + '/';
 
   // Filter results based on buttons and input
-  function filter_articles(e) {
+  const filter_articles = (e) => {
     return e.title.toLowerCase().includes(inputValue.toLowerCase()) && e.role.includes(buttonValue);
-  }
+  };
 
   // Set filtered articles to variable
   const filtered_articles = articles.filter(filter_articles);
@@ -73,10 +70,7 @@ const Articles = () => {
           key={'img_' + item.title}
           href={item.url}
           style={{
-            backgroundImage:
-              item.type === 'web'
-                ? 'url(' + yle_url + item.image_id + '.jpg)'
-                : 'url(' + item.image_id + ')',
+            backgroundImage: item.type === 'web' ? 'url(' + yle_url + item.image_id + '.jpg)' : 'url(' + item.image_id + ')',
           }}
         ></div>
         <div className='card__text' key={'title_' + item.title}>
@@ -97,34 +91,19 @@ const Articles = () => {
         <h3>Search by category</h3>
       </div>
       <div className='button-wrapper'>
-        <button
-          style={{ backgroundColor: buttonValue === '' ? '#fc6862' : '#ddd' }}
-          onClick={() => setButtonValue('')}
-        >
+        <button style={{ backgroundColor: buttonValue === '' ? '#fc6862' : '#ddd' }} onClick={() => setButtonValue('')}>
           All
         </button>
-        <button
-          style={{ backgroundColor: buttonValue === 'code' ? '#fc6862' : '#ddd' }}
-          onClick={() => setButtonValue('code')}
-        >
+        <button style={{ backgroundColor: buttonValue === 'code' ? '#fc6862' : '#ddd' }} onClick={() => setButtonValue('code')}>
           Code
         </button>
-        <button
-          style={{ backgroundColor: buttonValue === 'writing' ? '#fc6862' : '#ddd' }}
-          onClick={() => setButtonValue('writing')}
-        >
+        <button style={{ backgroundColor: buttonValue === 'writing' ? '#fc6862' : '#ddd' }} onClick={() => setButtonValue('writing')}>
           Writing
         </button>
-        <a
-          href='https://drive.google.com/drive/folders/1iN8jvAqSwJnkTyqAggJ1copS3PbTWcHu'
-          target='_blank'
-        >
+        <a href='https://drive.google.com/drive/folders/1iN8jvAqSwJnkTyqAggJ1copS3PbTWcHu' target='_blank'>
           TV
         </a>
-        <a
-          href='https://drive.google.com/drive/folders/1rKNfLYwMPW8wwYPjGIDQenUsDETxSX39'
-          target='_blank'
-        >
+        <a href='https://drive.google.com/drive/folders/1rKNfLYwMPW8wwYPjGIDQenUsDETxSX39' target='_blank'>
           Radio
         </a>
       </div>
@@ -133,11 +112,7 @@ const Articles = () => {
       </div>
 
       <div className='input-wrapper'>
-        <input
-          value={inputValue}
-          onChange={(e) => setInputValue(e.target.value)}
-          placeholder=''
-        ></input>
+        <input value={inputValue} onChange={(e) => setInputValue(e.target.value)} placeholder=''></input>
       </div>
 
       {/* Articles render here */}

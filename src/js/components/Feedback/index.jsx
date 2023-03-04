@@ -12,13 +12,13 @@ const Feedback = (props) => {
   const input_entry = 'entry.1456031971';
 
   // Submit form function
-  function submitForm(e) {
+  const submitForm = (e) => {
     e.preventDefault();
     if (form.current) {
       form.current.submit();
       setFormSubmitted(true);
     }
-  }
+  };
 
   return (
     <s.Container style={{ background: 'linear-gradient(rgb(0, 30, 30), ' + props.bgColor + ')' }}>
