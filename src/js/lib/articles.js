@@ -616,4 +616,14 @@ export const articles = [
     publisher: 'Yle',
     role: 'code',
   },
+  {
+    type: 'web',
+    title:
+      'Kiersimme toriteltat, bileet ja tupaillat – kokeile, mihin päin Suomea Ylen vaalikaruselli sinut heittää',
+    url: 'https://yle.fi/a/74-20024116',
+    image_id: '39-10852176410d001491d4',
+    published: '26.3.2023',
+    publisher: 'Yle',
+    role: 'code',
+  },
 ];
