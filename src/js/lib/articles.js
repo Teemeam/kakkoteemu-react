@@ -661,4 +661,13 @@ export const articles = [
     publisher: 'Yle',
     role: 'code',
   },
+  {
+    type: 'web',
+    title: 'Kun näytös päättyy, jatkuu Karvon perheen asuntovaunuarki – tämä juttu kertoo siitä, mitä sirkuksen yleisö ei näe',
+    url: 'https://yle.fi/a/74-20036927',
+    image_id: '39-1130067648acc51786d0',
+    published: '24.6.2023',
+    publisher: 'Yle',
+    role: 'code',
+  },
 ];
