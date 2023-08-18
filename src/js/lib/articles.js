@@ -670,4 +670,22 @@ export const articles = [
     publisher: 'Yle',
     role: 'code',
   },
+  {
+    type: 'web',
+    title: 'Pyöräetu suosii hyväpalkkaista – katso laskurista, paljonko sinä hyötyisit työsuhdepyörästä',
+    url: 'https://yle.fi/a/74-20045103',
+    image_id: '39-115703664dba599c7971',
+    published: '18.8.2023',
+    publisher: 'Yle',
+    role: 'code',
+  },
+  {
+    type: 'web',
+    title: 'Nautitko jonottamisesta vai laittaako se kärsivällisyytesi koetukselle? Tämä juttu kertoo miksi',
+    url: 'https://yle.fi/a/74-20045030',
+    image_id: '39-115656164db100c6b55d',
+    published: '18.8.2023',
+    publisher: 'Yle',
+    role: 'code',
+  },
 ];
