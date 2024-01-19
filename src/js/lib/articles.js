@@ -663,6 +663,15 @@ export const articles = [
   },
   {
     type: 'web',
+    title: 'Harva tajuaa, että Helsingissä lähes kuka tahansa pääsee kesällä 26 saareen – katso kartalta kaikki saaret, reitit ja palvelut',
+    url: 'https://yle.fi/a/74-20036843',
+    image_id: '39-1136475649e758a95424',
+    published: '2.7.2023',
+    publisher: 'Yle',
+    role: 'code',
+  },
+  {
+    type: 'web',
     title: 'Pyöräetu suosii hyväpalkkaista – katso laskurista, paljonko sinä hyötyisit työsuhdepyörästä',
     url: 'https://yle.fi/a/74-20045103',
     image_id: '39-115703664dba599c7971',
