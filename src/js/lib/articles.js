@@ -715,4 +715,13 @@ export const articles = [
     publisher: 'Yle',
     role: 'code',
   },
+  {
+    type: 'web',
+    title: 'Jokainen presidenttiehdokas täytti ystäväkirjan – se paljastaa menneisyyden poikkeuksellisella tavalla',
+    url: 'https://yle.fi/a/74-20069557',
+    image_id: '39-1226690659fe96d57f12',
+    published: '18.1.2024',
+    publisher: 'Yle',
+    role: 'code',
+  },
 ];
