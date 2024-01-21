@@ -15,6 +15,13 @@ jobs:
         with:
           node-version: '16.x'
 
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-west-1
+
       - name: Install dependencies
         run: npm install
 
@@ -22,10 +29,4 @@ jobs:
         run: npm run build
 
       - name: Deploy project
-        uses: SamKirkland/FTP-Deploy-Action@4.1.0
-        with:
-          server: ${{ secrets.ftp_server }}
-          username: ${{ secrets.ftp_username }}
-          password: ${{ secrets.ftp_password }}
-          local-dir: ./dist/
-          server-dir: ./public_html/
+        run: aws s3 sync ./dist/ s3://kakkoteemu.fi --delete
