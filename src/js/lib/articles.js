@@ -733,4 +733,13 @@ export const articles = [
     publisher: 'Yle',
     role: 'code',
   },
+  {
+    type: 'web',
+    title: 'Komba Johnbull löysi timantin, jonka piti muuttaa Sierra Leonen tulevaisuus – jäljelle jäi vain pettymys',
+    url: 'https://yle.fi/a/74-20074146',
+    image_id: '39-124457165cddd58d4f5d',
+    published: '17.2.2024',
+    publisher: 'Yle',
+    role: 'code',
+  },
 ];
