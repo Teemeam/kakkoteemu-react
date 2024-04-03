@@ -760,4 +760,13 @@ export const articles = [
     publisher: 'Yle',
     role: 'code',
   },
+  {
+    type: 'web',
+    title: 'Nyt yleistyy trendi, että suomen kielellä ei saa palvelua – testaa, millainen kielitaito riittää eri ammateissa',
+    url: 'https://yle.fi/a/74-20079949',
+    image_id: '39-125379565e826e03a6b4',
+    published: '3.4.2024',
+    publisher: 'Yle',
+    role: 'code',
+  },
 ];
