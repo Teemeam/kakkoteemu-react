@@ -778,4 +778,13 @@ export const articles = [
     publisher: 'Yle',
     role: 'code',
   },
+  {
+    type: 'web',
+    title: 'Tarkistimme faktoja EU:sta vuosien varrelta – kokeile tiedätkö, mikä on totta ja mikä tarua',
+    url: 'https://yle.fi/a/74-20084891',
+    image_id: '39-1291567665438c111525',
+    published: '2.6.2024',
+    publisher: 'Yle',
+    role: 'code',
+  },
 ];
