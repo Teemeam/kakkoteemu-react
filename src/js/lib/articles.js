@@ -787,4 +787,13 @@ export const articles = [
     publisher: 'Yle',
     role: 'code',
   },
+  {
+    type: 'web',
+    title: 'Tämä juttu kumoaa yleisen uskomuksen liikenneonnettomuuksista – katso, liikutko itse riskiteillä',
+    url: 'https://yle.fi/a/74-20091408',
+    image_id: '39-130169866695279a6530',
+    published: '17.6.2024',
+    publisher: 'Yle',
+    role: 'code',
+  },
 ];
