@@ -807,7 +807,7 @@ export const articles = [
   },
   {
     type: 'web',
-    title: 'Mielenterveysavun saaminen voi olla melkoista arpapeliä – Ylen pelissä voit kokea sen itse',
+    title: 'Kokeile, millaista on hakea mielenterveysapua – huonolla tuurilla pääset vain päivystyksen kautta kotiin',
     url: 'https://yle.fi/a/74-20119762',
     image_id: '39-136735767179e9c9fe84',
     published: '26.10.2024',
