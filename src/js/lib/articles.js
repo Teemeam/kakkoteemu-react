@@ -800,7 +800,7 @@ export const articles = [
     type: 'web',
     title: 'Trump solvaa siirtolaisia mielisairaiksi ja terroristeiksi – lähde Texasiin ja selvitä, mitä rajalla tapahtuu',
     url: 'https://yle.fi/a/74-20116511',
-    image_id: '39-136237667091e56c3b5b',
+    image_id: '39-13733196724abf14efad',
     published: '13.10.2024',
     publisher: 'Yle',
     role: 'code',
